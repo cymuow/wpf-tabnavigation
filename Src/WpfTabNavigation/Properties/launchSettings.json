@@ -1,0 +1,8 @@
+﻿{
+  "profiles": {
+    "WpfTabNavigation": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
