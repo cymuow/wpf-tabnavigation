@@ -1,8 +1,4 @@
 using Microsoft.Extensions.Configuration;
-using Prism.Ioc;
-using Prism.Mvvm;
-using Prism.Unity;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows;

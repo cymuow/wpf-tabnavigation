@@ -17,6 +17,11 @@ public class AViewModel : BindableBase, IActiveAware
         get => _isActive;
         set
         {
+            if (_isActive == value)
+            {
+                return; // 이 줄을 추가하면 불필요한 로직 실행을 막습니다.
+            }
+
             _isActive = value;
             if (_isActive)
             {
@@ -32,7 +37,7 @@ public class AViewModel : BindableBase, IActiveAware
 
     private void OnTabDeactivated()
     {
-        Debug.WriteLine("View A 퇴거");
+        Debug.WriteLine("View A 퇴장");
     }
 
     protected virtual void OnIsActiveChanged() => IsActiveChanged?.Invoke(this, EventArgs.Empty);

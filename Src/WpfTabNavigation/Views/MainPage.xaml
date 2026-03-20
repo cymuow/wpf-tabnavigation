@@ -119,5 +119,6 @@
 
         <!-- TabControl을 Region으로 설정 -->
         <TabControl Grid.Row="1" prism:RegionManager.RegionName="tabContentRegion" Style="{StaticResource ModernTabControlStyle}" ItemContainerStyle="{StaticResource RoundedTabItemStyle}" />
+        
     </Grid>
 </UserControl>
